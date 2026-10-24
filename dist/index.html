@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Forno Partenope — a fictional Neapolitan restaurant digital menu portfolio demo." />
+    <meta name="theme-color" content="#bf4930" />
+    <title>Forno Partenope — Digital Menu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#menu">Skip to menu</a>
+
+    <div class="demo-banner" role="note">
+      <span class="demo-dot" aria-hidden="true"></span>
+      <p><strong>Portfolio demo by RACARPA LABS</strong> <span aria-hidden="true">—</span> Fictional restaurant. No orders or reservations.</p>
+    </div>
+
+    <header class="site-header" id="top">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Forno Partenope, back to top">
+          <span class="brand-mark" aria-hidden="true">FP</span>
+          <span class="brand-type"><strong>Forno</strong><em>Partenope</em></span>
+        </a>
+        <div class="nav-actions">
+          <a href="#menu">Menu</a>
+          <a href="#about">Our story</a>
+          <button class="nav-menu" id="open-search" type="button" aria-label="Focus menu search">
+            <span aria-hidden="true">⌕</span><span>Search</span>
+          </button>
+        </div>
+      </nav>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span aria-hidden="true">✦</span> Naples, on your table</p>
+          <h1 id="hero-title">A little <i>more</i> Naples in every bite.</h1>
+          <p class="hero-lede">A fictional menu experience built around blistered crusts, long lunches, and the tiniest pizzaiola in town.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#menu">Browse the menu <span aria-hidden="true">↓</span></a>
+            <span class="hero-note">20 house favorites</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="sunburst" aria-hidden="true"></div>
+          <img class="mascot" src="assets/oliva-vesuviana.png" alt="Oliva Vesuviana, the fictional restaurant's olive mascot, carrying a Margherita pizza." />
+          <p class="mascot-caption"><span>Meet Oliva Vesuviana</span><br />our very serious pizzaiola</p>
+        </div>
+      </section>
+
+      <div class="category-strip" aria-label="Jump to a menu category">
+        <a href="#pizza">Pizzas <span>02</span></a>
+        <a href="#pasta-risotto">Pasta &amp; risotto <span>08</span></a>
+        <a href="#antipasti">Antipasti <span>04</span></a>
+        <a href="#dolci">Dolci <span>03</span></a>
+        <a href="#coffee-drinks">Coffee &amp; drinks <span>03</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="menu-section" id="menu" aria-labelledby="menu-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span aria-hidden="true">✦</span> The menu</p>
+            <h2 id="menu-title">Made for lingering.</h2>
+          </div>
+          <p class="section-intro">Five standout dishes are pictured; the rest stay beautifully simple. Prices are fictional and shown in USD.</p>
+        </div>
+
+        <div class="menu-tools">
+          <div class="category-filters" role="group" aria-label="Filter menu by category">
+            <button class="filter-button is-active" type="button" data-filter="all">All</button>
+            <button class="filter-button" type="button" data-filter="pizza">Pizzas</button>
+            <button class="filter-button" type="button" data-filter="pasta-risotto">Pasta &amp; risotto</button>
+            <button class="filter-button" type="button" data-filter="antipasti">Antipasti</button>
+            <button class="filter-button" type="button" data-filter="dolci">Dolci</button>
+            <button class="filter-button" type="button" data-filter="coffee-drinks">Drinks</button>
+          </div>
+          <label class="search-box" for="menu-search">
+            <span aria-hidden="true">⌕</span>
+            <input id="menu-search" type="search" placeholder="Search a dish" autocomplete="off" />
+          </label>
+        </div>
+
+        <p class="results-status" id="results-status" aria-live="polite"></p>
+        <div class="menu-categories" id="menu-categories"></div>
+      </section>
+
+      <section class="story-section" id="about" aria-labelledby="story-title">
+        <div class="story-stamp" aria-hidden="true">
+          <span>F</span><span>P</span>
+          <small>fictional<br />but delicious</small>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow"><span aria-hidden="true">✦</span> About this demo</p>
+          <h2 id="story-title">A menu with a point of view.</h2>
+          <p>Forno Partenope is not a real restaurant. It is a portfolio concept demonstrating how a digital menu can carry a distinct voice, character, and visual system—without asking guests to download an app.</p>
+          <p class="story-signoff">— RACARPA LABS</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark" aria-hidden="true">FP</span>
+        <span class="brand-type"><strong>Forno</strong><em>Partenope</em></span>
+      </a>
+      <p>Fictional restaurant menu · Portfolio demonstration</p>
+      <button class="back-to-top" id="back-to-top" type="button">Back to top <span aria-hidden="true">↑</span></button>
+    </footer>
+
+    <script src="menu-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
